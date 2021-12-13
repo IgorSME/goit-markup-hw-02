@@ -15,8 +15,8 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-.link {
-  text-decoration: none;
+.list {
+  list-style: none;
 }
 /* Logo */
 .logo {
@@ -32,7 +32,7 @@ body {
   color: #000;
 }
 .logo-light {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 /* site-nav */
 .nav-link {
@@ -58,7 +58,49 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+/* Hero */
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Works */
+.works-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.work-employe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.work-desccription {
+  color: var(--secodary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* Footer */
 .footer-contacts {
+  text-decoration: none;
   color: var(--footer-adress-link-color);
   font-style: normal;
   /* font-weight: 400; */
@@ -66,8 +108,9 @@ body {
   line-height: 1.71;
 }
 .footer-maps {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
+
 .auth-link:hover,
 .auth-link:focus,
 .footer-auth-link:hover,
@@ -111,4 +154,17 @@ body {
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.87;
+}
+/* Benefits */
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits-description {
+  color: var(--secodary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
