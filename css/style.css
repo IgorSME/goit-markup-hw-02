@@ -3,9 +3,10 @@
   --secodary-text-color: #757575;
   --accent-color: #2196f3;
   --primary-bcg-color: #e5e5e5;
+  --secondary-bcg-color: #2f303a;
   --white-text-color: #ffffff;
   --primary-bcg-button: #f5f4fa;
-  --footer-adress-link-color: rgba(255, 255, 255, 0, 6);
+  --footer-adress-link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -59,6 +60,10 @@ body {
   letter-spacing: 0.02em;
 }
 /* Hero */
+.hero-section {
+  background-color: var(--secondary-bcg-color);
+  text-align: center;
+}
 .hero-title {
   color: var(--white-text-color);
   font-weight: 900;
@@ -81,6 +86,9 @@ body {
 }
 
 /* Works */
+.works-section {
+  background-color: #f5f4fa;
+}
 .works-title {
   font-weight: bold;
   font-size: 36px;
@@ -91,21 +99,30 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .work-desccription {
   color: var(--secodary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 /* Footer */
+.footer-section {
+  background-color: var(--secondary-bcg-color);
+}
 .footer-contacts {
   text-decoration: none;
   color: var(--footer-adress-link-color);
   font-style: normal;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--white-text-color);
 }
 .footer-maps {
   color: var(--white-text-color);
@@ -118,8 +135,6 @@ body {
   color: var(--accent-color);
 }
 /* Filter */
-.filter-button {
-}
 .filter-link {
   color: var(--primary-text-color);
   background-color: var(--primary-bcg-button);
@@ -134,9 +149,11 @@ body {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-/* проекты */
-.project-section {
+.filter-link.current {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
 }
+/* проекты */
 .project-item {
   text-decoration: none;
 }
