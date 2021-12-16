@@ -22,24 +22,24 @@
                 <li><a href="" class="nav-link">Контакты</a></li>
             </ul>
         </nav>
-        
+    
         <ul class="auth-nav list">
-            <li><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="auth-link">+380961111111</a></li>
+            <li class="auth-item"><a href="mailto:info@devstudio.com" class="auth-link">info@devstudio.com</a></li>
+            <li class="auth-item"><a href="tel:+380961111111" class="auth-link">+380961111111</a></li>
         </ul>
     </header>
     <!-- Main section -->
     <main>
         <section>
-            <h1>Наши проекты</h1>
-            <!-- Фильтр -->
             <div class="container">
-                <ul class="filter-button list">
-                    <li><button class="filter-link current" type="button">Все</button></li>
-                    <li><button class="filter-link" type="button">Веб-сайты</button></li>
-                    <li><button class="filter-link" type="button">Приложения</button></li>
-                    <li><button class="filter-link" type="button">Дизайн</button></li>
-                    <li><button class="filter-link" type="button">Маркетинг</button></li>
+                <h1>Наши проекты</h1>
+                <!-- Фильтр -->
+                <ul class="filter list">
+                    <li><button class="filter-btn current" type="button">Все</button></li>
+                    <li><button class="filter-btn" type="button">Веб-сайты</button></li>
+                    <li><button class="filter-btn" type="button">Приложения</button></li>
+                    <li><button class="filter-btn" type="button">Дизайн</button></li>
+                    <li><button class="filter-btn" type="button">Маркетинг</button></li>
                 </ul>
                 <!-- Блок проектов -->
                 <ul class="project-section list">
@@ -98,7 +98,7 @@
                         <a href="" class="project-item">
                             <img src="./images/p8.jpg" alt="Бирка от одежды" width="370">
                             <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
-                            <p>Маркетинг</p>
+                            <p class="project-text">Маркетинг</p>
                         </a>
                     </li>
                     <li>
@@ -114,9 +114,9 @@
     </main>
     <!-- Footer section -->
     <footer>
-        <section class="footer-section">
+        <div class="container footer-background">
             <a href="/" class="logo" lang="en"> Web<span class="logo-light">Studio</span></a>
-            <address>
+            <address class="address">
                 <ul class="list">
                     <li><a href="https://goo.gl/maps/YRbQZVah7VMLd3e68" target="_blank" rel="noreferrer noopener"
                             class="footer-contacts footer-maps">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -124,7 +124,7 @@
                     <li><a href="tel:+380961111111" class="footer-contacts">+38 099 111 11 11</a></li>
                 </ul>
             </address>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
